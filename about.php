@@ -78,7 +78,7 @@ html {
 <body>
 
 <div class="about-section">
-  <h1>About Us Page</h1>
+  <h1>About Kampala News Center</h1>
   <p>We are the leading authentic news publishers in the region</p>
   <p>Kindly contact us for anything worth knowing.</p>
     <h2><a href="index.php">Home</a></h2>
