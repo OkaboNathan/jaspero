@@ -1,4 +1,4 @@
-<?php require('db.php'); ?>
+
 <?php include"includes/header.php"; ?>
 <head>
 <style>
