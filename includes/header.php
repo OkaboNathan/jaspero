@@ -38,7 +38,7 @@ chart.render();
 <div class="topnav">
   <div id="navbar">
   <a href="index.php">Home</a>
-  <a href="education.php">Education</a>
+  <a href="education">Education</a>
   <a href="politics.php">Politics</a>
   <a href="entertainment.php">Entertainment</a>
   <a href="nature.php">Nature</a>
