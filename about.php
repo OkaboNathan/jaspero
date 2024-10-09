@@ -33,7 +33,7 @@ html {
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #474e5d;
+  background-color: blue;
   color: white;
 }
 
@@ -48,7 +48,7 @@ html {
 }
 
 .title {
-  color: grey;
+  color: white;
 }
 
 .button {
