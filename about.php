@@ -78,10 +78,10 @@ html {
 <body>
 
 <div class="about-section">
-  <h1>About Kampala News Center</h1>
+  <h1>About Uganda News Center</h1>
   <p>We are the leading authentic news publishers in the region</p>
   <p>Kindly contact us for anything worth knowing.</p>
-    <h2><a href="index.php">Home</a></h2>
+    <h2><font color = "white"><a href="index.php">Home</a> </font></h2>
 </div>
 
 <h2 style="text-align:center">Our Team</h2>
