@@ -1,7 +1,7 @@
 <?php
 // Enter your Host, username, password, database below.
 // I left password empty because i do not set password on localhost.
-$con = mysqli_connect("localhost","root","","news_cms");
+$con = mysqli_connect("AZURE_MYSQL_HOST","AZURE_MYSQL_USERNAME","AZURE_MYSQL_PASSWORD","AZURE_MYSQL_DBNAME");
 // Check connection
 if (mysqli_connect_errno())
   {
