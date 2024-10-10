@@ -46,7 +46,9 @@ jobs:
     environment:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-    
+    permissions:
+      id-token: write #This is required for requesting the JWT
+
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
@@ -56,6 +58,13 @@ jobs:
       - name: Unzip artifact for deployment
         run: unzip release.zip
       
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_106B0462D9614083B2F53905CBBBE682 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_5AF1AE29C3844044B6B23EA226301481 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2E2B8A98183840DBBB5FD00C7DA17557 }}
+
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
@@ -63,4 +72,4 @@ jobs:
           app-name: 'jasperokabo'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DE43C90CEA4C40BAB69A7A520AAD20A5 }}
+          
